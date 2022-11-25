@@ -9,6 +9,7 @@ document.addEventListener('keydown', (event) => {
     if(event.key == "5") {keyboardInput.value += event.key;}
     if(event.key == "6") {keyboardInput.value += event.key;}
     if(event.key == "7") {keyboardInput.value += event.key;}
+    if(event.key == "8") {keyboardInput.value += event.key;}
     if(event.key == "0") {keyboardInput.value += event.key;}
     if(event.key == "Backspace") {keyboardInput.value = keyboardInput.value.slice(0,-4);}
     // console.log (event);
@@ -36,10 +37,11 @@ function myFunction() {
     if(keyboardInput.value === "100") {window.open("index.html#what", '_self'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
     if(keyboardInput.value === "200") {window.open("index.html#when", '_self'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
     if(keyboardInput.value === "300") {window.open("index.html#how", '_self'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
-    if(keyboardInput.value === "400") {window.open("https://ironhacklisboncampus.slack.com/archives/C03U5LA5AMR", '_blank'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
+    if(keyboardInput.value === "400") {window.open("index.html#hero", '_self'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
     if(keyboardInput.value === "500") {window.open("https://ironhacklisboncampus.slack.com/archives/C03U5LA5AMR", '_blank'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
     if(keyboardInput.value === "600") {window.open("https://ironhacklisboncampus.slack.com/archives/C03U5LA5AMR", '_blank'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
-    if(keyboardInput.value === "700") {window.open("wireframes.html", '_self'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
+    if(keyboardInput.value === "700") {window.open("https://ironhacklisboncampus.slack.com/archives/C03U5LA5AMR", '_blank'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
+    if(keyboardInput.value === "800") {window.open("wireframes.html", '_self'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
   };
 
   

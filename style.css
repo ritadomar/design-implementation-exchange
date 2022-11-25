@@ -44,7 +44,7 @@ header {
 }
 
 #page-title {
-    font-family: 'LoRes 15 OT', sans-serif;
+    font-family: 'lores-15', sans-serif;
     font-weight: 700;
     font-size: 6vw;
     line-height: 102px;
@@ -90,8 +90,8 @@ main {
 .text {
     width: 100%;
     color: var(--yellow);
-    font-family: 'LoRes 12 OT', sans-serif;
-    font-weight: 410;
+    font-family: 'lores-12-narrow', sans-serif;
+    font-weight: 400;
     font-size: 2.5vw;
     line-height: 52px;
     text-align: center;
@@ -119,8 +119,8 @@ main {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    font-family: 'LoRes 9 Plus OT';
-    font-weight: 410;
+    font-family: 'lores-9-plus-wide';
+    font-weight: 400;
     font-size: 2.5vw;
     line-height: 49px;
 }
@@ -145,11 +145,11 @@ hr.blue {
 }
 
 p.white {
-    font-family: 'LoRes 9 Plus OT';
-font-style: normal;
-font-weight: 710;
-font-size: 2.5vw;
-line-height: 49px;
+    font-family: 'lores-9-plus-wide', sans-serif;
+    font-style: normal;
+    font-weight: 710;
+    font-size: 2.5vw;
+    line-height: 49px;
 }
 
 /* big channel */
@@ -164,7 +164,7 @@ line-height: 49px;
     gap: 32px;
     background-color: var(--red);
     color: var(--yellow);
-    font-family: 'LoRes 15 OT';
+    font-family: 'lores-15', sans-serif;
     font-weight: 700;
     font-size: 6vw;
     line-height: 102px;
@@ -188,7 +188,7 @@ hr.yellow {
 
 /* big channel message */
 .message p {
-    font-family: 'LoRes 9 OT';
+    font-family: 'lores-9-wide', sans-serid;
     font-weight: 410;
     font-size: 3vw;
     line-height: 62px;
@@ -227,7 +227,7 @@ hr.yellow {
 }
 
 .body, .tasks {
-    font-family: 'LoRes 12 OT';
+    font-family: lores-12-narrow, sans-serif, sans-serif;
     font-weight: 410;
     font-size: 2.2vw;
     line-height: 130%;
@@ -303,7 +303,7 @@ footer {
 .footer-link {
     
     width: 100%;
-    font-family: 'LoRes 12 OT';
+    font-family: lores-12, sans-serif;
     font-weight: 700;
     font-size: 2.5vw;
     line-height: 48px;    

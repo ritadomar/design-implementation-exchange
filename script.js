@@ -38,9 +38,9 @@ function myFunction() {
     if(keyboardInput.value === "200") {window.open("index.html#when", '_self'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
     if(keyboardInput.value === "300") {window.open("index.html#how", '_self'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
     if(keyboardInput.value === "400") {window.open("index.html#hero", '_self'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
-    if(keyboardInput.value === "500") {window.open("https://ironhacklisboncampus.slack.com/archives/C03U5LA5AMR", '_blank'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
+    if(keyboardInput.value === "500") {window.open("https://ironhacklisboncampus.slack.com/archives/C04BMUB5LF6", '_blank'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
     if(keyboardInput.value === "600") {window.open("https://ironhacklisboncampus.slack.com/archives/C03U5LA5AMR", '_blank'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
-    if(keyboardInput.value === "700") {window.open("https://ironhacklisboncampus.slack.com/archives/C03U5LA5AMR", '_blank'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
+    if(keyboardInput.value === "700") {window.open("https://ironhacklisboncampus.slack.com/archives/C04BKEP26QJ", '_blank'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
     if(keyboardInput.value === "800") {window.open("wireframes.html", '_self'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
   };
 

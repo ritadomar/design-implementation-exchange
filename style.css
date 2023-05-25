@@ -123,6 +123,7 @@ main {
     font-weight: 400;
     font-size: 2.5vw;
     line-height: 49px;
+    white-space: nowrap;
 }
 
 .channel {
@@ -168,6 +169,7 @@ p.white {
     font-weight: 700;
     font-size: 6vw;
     line-height: 102px;
+    white-space: nowrap;
 }
 
 .big p {

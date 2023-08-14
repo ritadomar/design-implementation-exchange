@@ -1,17 +1,21 @@
 const keyboardInput = document.getElementById('keyboard-input');
 
+const ux = "https://ironhackportugal.slack.com/archives/C05A5FN5HJ9";
+const web = "https://ironhackportugal.slack.com/archives/C05AASRJQ12";
+const cohort = "https://ironhackportugal.slack.com/archives/C05A8DXUSUA";
+
 document.addEventListener('keydown', (event) => {
     // if(event.key == "1") {keyboardInput.value += event.key; window.open("index.html#what", '_self');}
     if(event.key == "2") {keyboardInput.value += event.key;}
-    if(event.key == "1") {keyboardInput.value += event.key;}
-    if(event.key == "3") {keyboardInput.value += event.key}
-    if(event.key == "4") {keyboardInput.value += event.key;}
-    if(event.key == "5") {keyboardInput.value += event.key;}
-    if(event.key == "6") {keyboardInput.value += event.key;}
-    if(event.key == "7") {keyboardInput.value += event.key;}
-    if(event.key == "8") {keyboardInput.value += event.key;}
-    if(event.key == "0") {keyboardInput.value += event.key;}
-    if(event.key == "Backspace") {keyboardInput.value = keyboardInput.value.slice(0,-4);}
+    else if(event.key == "1") {keyboardInput.value += event.key;}
+    else if(event.key == "3") {keyboardInput.value += event.key}
+    else if(event.key == "4") {keyboardInput.value += event.key;}
+    else if(event.key == "5") {keyboardInput.value += event.key;}
+    else if(event.key == "6") {keyboardInput.value += event.key;}
+    else if(event.key == "7") {keyboardInput.value += event.key;}
+    else if(event.key == "8") {keyboardInput.value += event.key;}
+    else if(event.key == "0") {keyboardInput.value += event.key;}
+    else if(event.key == "Backspace") {keyboardInput.value = keyboardInput.value.slice(0,-4);}
     // console.log (event);
 
     setTimeout(() => {
@@ -39,11 +43,11 @@ function myFunction() {
     if(keyboardInput.value === "300") {window.open("index.html#how", '_self'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
     if(keyboardInput.value === "400") {window.open("index.html#hero", '_self'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
     // UX LINK
-    if(keyboardInput.value === "500") {window.open("https://discord.com/channels/1060157004934561803/1075347100310700032", '_blank'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
+    if(keyboardInput.value === "500") {window.open(ux, '_blank'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
     // WEB LINK
-    if(keyboardInput.value === "600") {window.open("https://discord.com/channels/1060157004934561803/1075347221559644190", '_blank'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
+    if(keyboardInput.value === "600") {window.open(web, '_blank'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
     // COHORT LINK
-    if(keyboardInput.value === "700") {window.open("https://discord.com/channels/1060157004934561803/1075346440911589438", '_blank'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
+    if(keyboardInput.value === "700") {window.open(cohort, '_blank'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
     if(keyboardInput.value === "800") {window.open("wireframes.html", '_self'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
   };
 

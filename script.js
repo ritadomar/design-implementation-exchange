@@ -1,82 +1,84 @@
 const keyboardInput = document.getElementById('keyboard-input');
 
-const ux = "https://ironhackportugal.slack.com/archives/C05A5FN5HJ9";
-const web = "https://ironhackportugal.slack.com/archives/C05AASRJQ12";
-const cohort = "https://ironhackportugal.slack.com/archives/C05A8DXUSUA";
+const ux = 'https://ironhackportugal.slack.com/archives/C05A5FN5HJ9';
+const web = 'https://ironhackportugal.slack.com/archives/C05AASRJQ12';
+const cohort = 'https://ironhackportugal.slack.com/archives/C05A8DXUSUA';
 
-document.addEventListener('keydown', (event) => {
-    // if(event.key == "1") {keyboardInput.value += event.key; window.open("index.html#what", '_self');}
-    if(event.key == "2") {keyboardInput.value += event.key;}
-    else if(event.key == "1") {keyboardInput.value += event.key;}
-    else if(event.key == "3") {keyboardInput.value += event.key}
-    else if(event.key == "4") {keyboardInput.value += event.key;}
-    else if(event.key == "5") {keyboardInput.value += event.key;}
-    else if(event.key == "6") {keyboardInput.value += event.key;}
-    else if(event.key == "7") {keyboardInput.value += event.key;}
-    else if(event.key == "8") {keyboardInput.value += event.key;}
-    else if(event.key == "0") {keyboardInput.value += event.key;}
-    else if(event.key == "Backspace") {keyboardInput.value = keyboardInput.value.slice(0,-4);}
-    // console.log (event);
+const cohortLink = document.getElementById('cohort-link');
+const uxLink = document.getElementById('ux-link');
+const webLink = document.getElementById('web-link');
 
-    setTimeout(() => {
-        myFunction();
-    }, 1000)
-    
+const uxCohort = document.getElementById('ux-cohort');
+const webCohort = document.getElementById('web-cohort');
+const channelCohort = document.getElementById('channel-cohort');
+
+const slicedInput = keyboardInput.value.slice(0, -4);
+
+cohortLink.setAttribute('href', cohort);
+uxLink.setAttribute('href', ux);
+webLink.setAttribute('href', web);
+
+uxCohort.innerHTML = 'oct23-ux-ft';
+webCohort.innerHTML = 'oct23-webdev-ft';
+channelCohort.innerHTML = 'oct23-cohort';
+
+document.addEventListener('keydown', event => {
+  if (event.key == 'Backspace') {
+    keyboardInput.value = slicedInput;
+  } else if (!Number.isNaN(+event.key)) {
+    keyboardInput.value += event.key;
+  }
+
+  setTimeout(() => {
+    changeChannel();
+  }, 1000);
 });
 
-// todo:
-// descobrir como fazer trigger after delay
-// descobrir como apagar after delay
-// descobrir como fazer trigger a um input de 2 numeros
+function changeChannel() {
+  switch (keyboardInput.value) {
+    case '1':
+    case '100':
+      window.open('index.html#what', '_self');
+      keyboardInput.value = slicedInput;
+      break;
+    case '2':
+    case '200':
+      window.open('index.html#when', '_self');
+      keyboardInput.value = slicedInput;
+      break;
+    case '3':
+    case '300':
+      window.open('index.html#how', '_self');
+      keyboardInput.value = slicedInput;
+      break;
+    case '4':
+    case '400':
+      window.open('index.html#hero', '_self');
+      keyboardInput.value = slicedInput;
+      break;
 
+    //   UX LINK
+    case '500':
+      window.open(ux, '_self');
+      keyboardInput.value = slicedInput;
+      break;
 
+    //   WEB LINK
+    case '600':
+      window.open(web, '_self');
+      keyboardInput.value = slicedInput;
+      break;
 
-// keyboardInput.addEventListener('submit', myFunction);
+    //   COHORT LINK
+    case '700':
+      window.open(cohort, '_self');
+      keyboardInput.value = slicedInput;
+      break;
 
-function myFunction() {
-    if(keyboardInput.value === "1") {window.open("index.html#what", '_self'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
-    if(keyboardInput.value === "2") {window.open("index.html#when", '_self'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
-    if(keyboardInput.value === "3") {window.open("index.html#how", '_self'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
-    if(keyboardInput.value === "4") {window.open("index.html#hero", '_self'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
-    if(keyboardInput.value === "100") {window.open("index.html#what", '_self'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
-    if(keyboardInput.value === "200") {window.open("index.html#when", '_self'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
-    if(keyboardInput.value === "300") {window.open("index.html#how", '_self'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
-    if(keyboardInput.value === "400") {window.open("index.html#hero", '_self'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
-    // UX LINK
-    if(keyboardInput.value === "500") {window.open(ux, '_blank'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
-    // WEB LINK
-    if(keyboardInput.value === "600") {window.open(web, '_blank'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
-    // COHORT LINK
-    if(keyboardInput.value === "700") {window.open(cohort, '_blank'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
-    if(keyboardInput.value === "800") {window.open("wireframes.html", '_self'); keyboardInput.value = keyboardInput.value.slice(0,-4);}
-  };
-
-  
-
-  
-//   // When keyup happens on an element with id of "inputname"
-//  // create another function inside
-// keyboardInput.addEventListener('keyup',function(){
-
-//     function timer(){
-//         console.log("banana")
-//         // myFunction()
-//       }
-   
-//    //setTimeout(myFunc,5000);
-//     setTimeout(timer,3000);   
-
-//   });
-
-  
-// /*   OR:
-//     $('#inputname').on('keyup',function(){
-//         setTimeout(function(){  
-//         var name = $('#inputname').val();
-//         $('#yourname').text(name);
-//          },3000);
-     
-//      });
-// */
-  
-
+    //   WIREFRAMES LINK
+    case '800':
+      window.open('wireframes.html', '_self');
+      keyboardInput.value = slicedInput;
+      break;
+  }
+}

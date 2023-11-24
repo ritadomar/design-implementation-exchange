@@ -1,195 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Design Implementation Week Exchange</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/ayj3chg.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="content/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="content/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="content/favicon-16x16.png">
-    <link rel="manifest" href="content/site.webmanifest">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ayj3chg.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="content/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="content/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="content/favicon-16x16.png"
+    />
+    <link rel="manifest" href="content/site.webmanifest" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <img src="./img/Ironhack-Logo.svg" alt="Site Logo" id="logo">
-        <h1 id="page-title"><span class="blue">Design Implementation</span> Week</h1>
+      <img src="./img/Ironhack-Logo.svg" alt="Site Logo" id="logo" />
+      <h1 id="page-title">
+        <span class="blue">Design Implementation</span> Week
+      </h1>
     </header>
 
     <main>
-        <!-- main section -->
-        <section id="hero">
+      <!-- main section -->
+      <section id="hero">
+        <!-- divider with text -->
+        <div class="divider-text">
+          <div class="divider"></div>
+          <p class="text">Exchange Extravaganza</p>
+          <div class="divider"></div>
+        </div>
 
-            <!-- divider with text -->
-            <div class="divider-text">
-                <div class="divider"></div>
-                <p class="text">Exchange Extravaganza</p>
-                <div class="divider"></div>
+        <!-- navigation list -->
+        <div class="channels">
+          <!-- what -->
+
+          <a href="#what" class="channel bright-blue">
+            <p>What</p>
+            <hr class="blue" />
+            <p class="white">100</p>
+          </a>
+
+          <!-- when -->
+          <a href="#when" class="channel bright-blue">
+            <p>When</p>
+            <hr class="blue" />
+            <p class="white">200</p>
+          </a>
+
+          <!-- how -->
+          <a href="#how" class="channel bright-blue">
+            <p>How</p>
+            <hr class="blue" />
+            <p class="white">300</p>
+          </a>
+        </div>
+
+        <!-- simple divider -->
+        <div class="divider pink"></div>
+
+        <!-- slack channels -->
+        <div class="slack">
+          <!-- big channel -->
+          <div class="big-channel">
+            <!-- main slack -->
+            <a
+              href="https://ironhackportugal.slack.com/archives/C05A8DXUSUA"
+              class="channel big"
+              id="cohort-link"
+              target="_blank"
+            >
+              <p id="channel-cohort">oct23-cohort</p>
+              <hr />
+              <p>700</p>
+            </a>
+
+            <!-- message -->
+            <div class="message">
+              <p>Go to the Slack channel here</p>
             </div>
+          </div>
 
-            <!-- navigation list -->
-            <div class="channels">
+          <div class="channels">
+            <!-- ux -->
+            <a
+              href="https://ironhackportugal.slack.com/archives/C05A5FN5HJ9"
+              class="channel"
+              target="_blank"
+              id="ux-link"
+            >
+              <p class="yellow" id="ux-cohort">oct23-uxui-ft</p>
+              <hr class="yellow" />
+              <p class="white">500</p>
+            </a>
 
-                <!-- what -->
+            <!-- dev -->
+            <a
+              href="https://ironhackportugal.slack.com/archives/C05AASRJQ12"
+              class="channel"
+              target="_blank"
+              id="web-link"
+            >
+              <p class="bright-blue" id="web-cohort">oct23-wd-ft</p>
+              <hr class="blue" />
+              <p class="white">600</p>
+            </a>
+          </div>
+        </div>
 
-                <a href="#what" class="channel bright-blue">
-                    <p>What</p>
-                    <hr class="blue">
-                    <p class="white">100</p>
-                </a>
+        <!-- simple divider -->
+        <div class="divider dark-blue"></div>
+      </section>
 
+      <!-- what -->
+      <section id="what">
+        <!-- section tile -->
+        <h2 class="big-title">What</h2>
 
-                <!-- when -->
-                <a href="#when" class="channel bright-blue">
-                    <p>When</p>
-                    <hr class="blue">
-                    <p class="white">200</p>
-                </a>
+        <!-- section text -->
+        <p class="body">
+          In a world where <span class="pink">Web Developers</span> and
+          <span class="pink">UX/UI Designers</span> co-exist to turn the digital
+          realm into a better place, you will find your mission by creating a
+          landing page for something crazy-amazing!
+        </p>
+      </section>
 
-                <!-- how -->
-                <a href="#how" class="channel bright-blue">
-                    <p>How</p>
-                    <hr class="blue">
-                    <p class="white">300</p>
-                </a>
-            </div>
+      <!-- when -->
+      <section id="when">
+        <!-- section title -->
+        <h2 class="big-title">When</h2>
 
-            <!-- simple divider -->
-            <div class="divider pink"></div>
+        <!-- dates -->
+        <div class="dates">
+          <!-- day of the week -->
+          <div class="message yellow">
+            <p>This Friday</p>
+          </div>
 
-            <!-- slack channels -->
-            <div class="slack">
+          <!-- month and day -->
+          <div class="message blue">
+            <p id="date">Nov 24th</p>
+          </div>
+        </div>
+      </section>
 
-                <!-- big channel -->
-                <div class="big-channel">
+      <!-- how -->
+      <section id="how">
+        <!-- section title -->
+        <h2 class="big-title">How</h2>
 
-                    <!-- main slack -->
-                    <a href="https://ironhackportugal.slack.com/archives/C05A8DXUSUA" class="channel big"
-                        target="_blank">
-                        <p>oct23-cohort</p>
-                        <hr>
-                        <p>700</p>
-                    </a>
+        <!-- task introduction -->
+        <p class="body">
+          <span class="pink">UX/UI Designers</span> and
+          <span class="pink">Web Developers</span> will trade places for 1h30!
+        </p>
 
-                    <!-- message -->
-                    <div class="message">
-                        <p>Go to the Slack channel here</p>
-                    </div>
-                </div>
-
-                <div class="channels">
-                    <!-- ux -->
-                    <a href="https://ironhackportugal.slack.com/archives/C05A5FN5HJ9" class="channel" target="_blank">
-                        <p class="yellow">oct23-uxui-ft</p>
-                        <hr class="yellow">
-                        <p class="white">500</p>
-                    </a>
-
-                    <!-- dev -->
-                    <a href="https://ironhackportugal.slack.com/archives/C05AASRJQ12" class="channel" target="_blank">
-                        <p class="bright-blue">oct23-wd-ft</p>
-                        <hr class="blue">
-                        <p class="white">600</p>
-                    </a>
-                </div>
-            </div>
-
-            <!-- simple divider -->
-            <div class="divider dark-blue"></div>
-
-        </section>
-
-        <!-- what -->
-        <section id="what">
-
-            <!-- section tile -->
-            <h2 class="big-title">What</h2>
-
-            <!-- section text -->
-            <p class="body">In a world where <span class="pink">Web Developers</span> and <span class="pink">UX/UI
-                    Designers</span> co-exist to turn the digital realm into a
-                better place, you will find your mission by creating a landing page for something crazy-amazing!</p>
-        </section>
-
-        <!-- when -->
-        <section id="when">
-
-            <!-- section title -->
-            <h2 class="big-title">When</h2>
-
-            <!-- dates -->
-            <div class="dates">
-
-                <!-- day of the week -->
-                <div class="message yellow">
-                    <p>This Friday</p>
-                </div>
-
-                <!-- month and day -->
-                <div class="message blue">
-                    <p>Nov 24th</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- how -->
-        <section id="how">
-
-            <!-- section title -->
-            <h2 class="big-title">How</h2>
-
-            <!-- task introduction -->
-            <p class="body"><span class="pink">UX/UI Designers</span> and <span class="pink">Web Developers</span> will
-                trade places for 1h30!</p>
-
-            <!-- task description -->
-            <ol class="tasks">
-                <li>After introducing the <span class="pink">Web Dev class</span> to <a
-                        href="wireframes.html">Wireframing</a>, they
-                    will have 20 minutes to draw one low-fidelity screen of what they want to make for their final
-                    project;</li>
-                <li>After that, they will give you their screen and you have to write the HTML for it. You'll have 40
-                    minutes;</li>
-                <li>Finally, everyone will have 30 minutes to comment: <span class="pink">Web Developers</span> will
-                    tell you how you could improve your code; <span class="pink">UX/UI Designers</span> will tell you
-                    how you can improve your wireframes!</li>
-            </ol>
-            <div class="channels">
-                <a href="wireframes.html" class="channel bright-blue wide">
-                    <p class="bright-blue">What are wireframes?</p>
-                    <hr class="blue">
-                    <p class="white">800</p>
-                </a>
-            </div>
-        </section>
+        <!-- task description -->
+        <ol class="tasks">
+          <li>
+            After introducing the <span class="pink">Web Dev class</span> to
+            <a href="wireframes.html">Wireframing</a>, they will have 20 minutes
+            to draw one low-fidelity screen of what they want to make for their
+            final project;
+          </li>
+          <li>
+            After that, they will give you their screen and you have to write
+            the HTML for it. You'll have 40 minutes;
+          </li>
+          <li>
+            Finally, everyone will have 30 minutes to comment:
+            <span class="pink">Web Developers</span> will tell you how you could
+            improve your code; <span class="pink">UX/UI Designers</span> will
+            tell you how you can improve your wireframes!
+          </li>
+        </ol>
+        <div class="channels">
+          <a href="wireframes.html" class="channel bright-blue wide">
+            <p class="bright-blue">What are wireframes?</p>
+            <hr class="blue" />
+            <p class="white">800</p>
+          </a>
+        </div>
+      </section>
     </main>
 
     <!-- footer -->
     <footer>
-        <ol class="footer">
-            <a href="#what" class="link what">
-                <li class="footer-link">What</li>
-            </a>
-            <a href="#when" class="link when">
-                <li class="footer-link">When</li>
-            </a>
-            <a href="#how" class="link how">
-                <li class="footer-link">How</li>
-            </a>
-            <a href="#hero" class="link top">
-                <li class="footer-link">Back to Top</li>
-            </a>
-        </ol>
+      <ol class="footer">
+        <a href="#what" class="link what">
+          <li class="footer-link">What</li>
+        </a>
+        <a href="#when" class="link when">
+          <li class="footer-link">When</li>
+        </a>
+        <a href="#how" class="link how">
+          <li class="footer-link">How</li>
+        </a>
+        <a href="#hero" class="link top">
+          <li class="footer-link">Back to Top</li>
+        </a>
+      </ol>
     </footer>
 
-    <input type="text" id="keyboard-input" placeholder="empty">
+    <input type="text" id="keyboard-input" placeholder="empty" />
 
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
